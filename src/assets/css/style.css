@@ -1,0 +1,230 @@
+.header {
+  padding: 2.8rem 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.header__logo:hover, .header__logo:focus {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.header__logo-txt {
+  margin: 0 0 0 1.1rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.header__logo-icon {
+  width: 4.9rem;
+}
+.header .g-nav {
+  width: 65%;
+  margin: 0 2rem 0 0;
+}
+@media not screen and (min-width: 768px) {
+  .header .g-nav {
+    display: none;
+  }
+}
+.header .g-nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .g-nav__item {
+  font-size: 1.4rem;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.header .g-nav__item:hover, .header .g-nav__item:focus {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.header .g-nav__item:not(:last-child) {
+  margin: 0 2rem 0 0;
+}
+.header__btn-action {
+  margin: 0 0 0 auto;
+}
+
+.mv {
+  padding: 10.5rem 0 14.3rem;
+  background: url(../images/webp/mv.webp) no-repeat center/cover;
+}
+.mv .hero {
+  text-align: center;
+}
+@media not screen and (min-width: 768px) {
+  .mv .hero {
+    text-align: left;
+  }
+}
+.mv .hero__ttl {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 2;
+}
+@media not screen and (min-width: 768px) {
+  .mv .hero__ttl {
+    font-size: 2.7rem;
+  }
+}
+.mv .hero__lead {
+  margin: 4rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+@media not screen and (min-width: 768px) {
+  .mv .hero__lead {
+    font-size: 1.4rem;
+  }
+}
+.mv .hero__btn {
+  margin: 4rem auto 0;
+}
+@media not screen and (min-width: 768px) {
+  .mv .hero__btn {
+    margin: 6.5rem 0 0;
+  }
+}
+
+.reason {
+  padding: 4rem 0 5.8rem;
+  background: #f1f5f2;
+}
+.reason__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 4.7rem 0 0;
+}
+@media not screen and (min-width: 576px) {
+  .reason__list {
+    flex-direction: column;
+  }
+}
+.reason__item {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  width: calc((100% - 4rem) / 3);
+}
+@media not screen and (min-width: 768px) {
+  .reason__item {
+    width: calc((100% - 2rem) / 3);
+  }
+}
+@media not screen and (min-width: 576px) {
+  .reason__item {
+    width: 100%;
+  }
+}
+@media not screen and (min-width: 576px) {
+  .reason__item:not(:first-child) {
+    margin: 4rem 0 0;
+  }
+}
+.reason__item__txt {
+  padding: 2rem 0 0;
+}
+.reason__item__txt-ttl {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #006536;
+}
+@media not screen and (min-width: 768px) {
+  .reason__item__txt-ttl {
+    font-size: 1.6rem;
+  }
+}
+.reason__item__txt-desc {
+  margin: 2rem 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.cta {
+  padding: 7.6rem 0 7.2rem;
+  background: url(../images/webp/cta_bg.webp) no-repeat center/cover;
+}
+.cta__desc {
+  margin: 2rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+@media not screen and (min-width: 576px) {
+  .cta__desc {
+    margin: 4rem 0 0;
+    font-size: 1.4rem;
+  }
+}
+@media not screen and (min-width: 576px) {
+  .cta__btn:not(:first-child) {
+    margin: 1rem 0 0;
+  }
+}
+.cta__btn__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5.5rem auto 0;
+  max-width: 40.4rem;
+}
+@media not screen and (min-width: 576px) {
+  .cta__btn__wrap {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  padding: 4.9rem 0 2rem;
+  background: #333;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.footer__item:hover, .footer__item:focus {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.footer__item:not(:last-child) {
+  margin: 0 3rem 0 0;
+}
+@media not screen and (min-width: 576px) {
+  .footer__item:not(:last-child) {
+    margin: 0 1.5rem 0 0;
+    font-size: 1.4rem;
+  }
+}
+.footer__copy {
+  display: block;
+  margin: 1.5rem 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,48 @@
+@use "./base/variable" as v;
+.reason {
+  padding: 4rem 0 5.8rem;
+  background: #f1f5f2;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 4.7rem 0 0;
+    @include v.sm {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    width: calc((100% - 4rem) / 3);
+    @include v.md {
+      width: calc((100% - 2rem) / 3);
+    }
+    @include v.sm {
+      width: 100%;
+    }
+    &:not(:first-child) {
+      @include v.sm {
+        margin: 4rem 0 0;
+      }
+    }
+    &__txt {
+      padding: 2rem 0 0;
+      &-ttl {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+        color: #006536;
+        @include v.md {
+          font-size: 1.6rem;
+        }
+      }
+      &-desc {
+        margin: 2rem 0 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.75;
+      }
+    }
+  }
+}
